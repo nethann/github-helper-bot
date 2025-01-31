@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config({path: './config/.env'});
 
 const { Client, GatewayIntentBits } = require('discord.js');
 
@@ -14,4 +14,4 @@ client.once('ready', () => {
     console.log('Bot is online!');
 });
 
-client.login(process.env.DISCORD_TOKEN);  // Ensure this line is correctly referencing the .env file
+client.login(process.env.DISCORD_TOKEN);  
